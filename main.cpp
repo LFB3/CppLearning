@@ -1,34 +1,15 @@
 #include <string>
 #include <iostream>
-using namespace std;
+#include <vector>
 
 int main() {
-    int solution = 0;
-    int firstNumber = 0;
-    int secondNumber = 0;
-    string operation = "0";
-    cout << "First Number: ";
-    cin >> firstNumber;
-
-    cout << "Second Number: ";
-    cin >> secondNumber;
-
-    cout << "Put +,-,* or / in: ";
-    cin >> operation;
-
-    if (operation == "+") {
-        solution = firstNumber + secondNumber;
-    }
-    if (operation == "-") {
-        solution = firstNumber - secondNumber;
-    }
-    if (operation == "*") {
-        solution = firstNumber * secondNumber;
-    }
-    if (operation == "/") {
-        solution = firstNumber / secondNumber;
+    int userInput;
+    std::vector <int> test;
+    while (true) {
+        std::cin >> userInput;
+        test.push_back(userInput);
+        std::cout << "The list is " << test.size() << " character long";
     }
 
-    cout << "The sum is: " << solution;
     return 0;
 }
