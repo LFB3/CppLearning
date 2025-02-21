@@ -7,13 +7,13 @@ int main() {
     int firstNumber = 0;
     int secondNumber = 0;
     string operation = "0";
-    cout << "Erste Zahl: ";
+    cout << "First Number: ";
     cin >> firstNumber;
 
-    cout << "Zweite Zahl: ";
+    cout << "Second Number: ";
     cin >> secondNumber;
 
-    cout << "Gebe +,-,* oder / ein: ";
+    cout << "Put +,-,* or / in: ";
     cin >> operation;
 
     if (operation == "+") {
@@ -29,6 +29,6 @@ int main() {
         solution = firstNumber / secondNumber;
     }
 
-    cout << "Das ergebnis ist " << solution;
+    cout << "The sum is: " << solution;
     return 0;
 }
