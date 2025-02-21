@@ -1,15 +1,13 @@
-#include <string>
 #include <iostream>
-#include <vector>
+using namespace std;
 
 int main() {
-    int userInput;
-    std::vector <int> test;
-    while (true) {
-        std::cin >> userInput;
-        test.push_back(userInput);
-        std::cout << "The list is " << test.size() << " character long";
+    int i = 1;
+    int z = 1;
+    while (i != 100) {
+        z = z * 2;
+        cout << "#" << i << "#" << z << endl;
+        i = i + 1;
     }
-
     return 0;
 }
