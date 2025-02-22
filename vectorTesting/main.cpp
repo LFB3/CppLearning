@@ -1,8 +1,7 @@
-#include <string>
 #include <iostream>
 #include <vector>
 
-void print(std::vector<int> list) {
+void print(const std::vector<int>& list) {
     for (int i : list) {
         std::cout << i << ", ";
     }
