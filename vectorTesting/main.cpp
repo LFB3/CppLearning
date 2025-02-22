@@ -2,14 +2,28 @@
 #include <iostream>
 #include <vector>
 
-int main() {
-    int userInput;
-    std::vector <int> test;
-    while (true) {
-        std::cin >> userInput;
-        test.push_back(userInput);
-        std::cout << "The list is " << test.size() << " character long";
+void print(std::vector<int> list) {
+    for (int i : list) {
+        std::cout << i << ", ";
     }
+}
+
+
+int main() {
+    int userInput = 0;
+    std::vector<int> number;
+    while (true) {
+        std::cout << "\nPut a number in: ";
+        std::cin >> userInput;
+
+        if (userInput == -1) {
+            break;
+        }
+
+        number.push_back(userInput);
+        print(number);
+    }
+
 
     return 0;
 }
