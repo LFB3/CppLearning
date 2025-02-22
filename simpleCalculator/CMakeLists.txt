@@ -3,4 +3,4 @@ project(CppLearning)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CppLearning randomFile/main.cpp)
+add_executable(CppLearning simpleCalculator/main.cpp)
