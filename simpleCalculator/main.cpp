@@ -9,7 +9,7 @@ int main() {
     int secondNumber = 0;
     while (true) {
         string operation = "0";
-        cout << "First Number: ";
+        cout << "First Number or -0 to stop: ";
         cin >> firstNumber;
         if (firstNumber == -0) {
             break;
